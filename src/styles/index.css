@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* ========== COLORS ========== */
+
+  --color-bg: #080a0b;
+  --color-surface: #0d1011;
+  --color-surface-alt: #111516;
+  
+  --color-primary: #39e6d0;
+  --color-primary-hover: #67f0df;
+
+  --color-text: #f2f4f3;
+  --color-text-secondary: #9ba5a5;
+  --color-text-muted: #687171;
+
+  --color-border: #242a2b;
+
+    /* ========== TYPOGRAPHY ========== */
+
+  --font-primary: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+    /* ========== LAYOUT ========== */
+
+  --container-width: 1200px;
+  
+  --section-padding-desktop: 120px;
+  --section-padding-mobile: 80px;
+
+    /* ========== RADIUS ========== */
+  
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  
+    /* ==========TRANSITIONS ========== */
+
+  --transition-fast: 180ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  
+    /* ========== ROOT ========== */
+
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========== RESET ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    }
+
+a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========== ROOT ========== */
+
+#root { 
+    min-height: 100vh;
+}
+
+/* ========== SELECTION ========== */
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/* ========== SCROLLBAR ========== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background:var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-border);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+/* ========== GLOBAL CONTAINER ========== */
+
+.container {
+    width: min(
+        calc(100% - 48px),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+/* ========== TECHNICAL GRID ========== */
+
+.page-grid {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-grid::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    
+    pointer-events: none;
+
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        );
+    
+    background-size: 80px 80px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        rgba(0, 0, 0, 0.6) 60%,
+        transparent 100%
+    );
+
+    z-index: -1;
+}
+
+/* ========== MONO TEXT ========== */
+
+.mono {
+    font-family: var(--font-mono);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+    :root {
+        --section-padding-desktop: var(--section-padding-mobile);
+    }
+
+    .container {
+        width: min(
+            calc(100% - 32px),
+            var(--container-width)
+        );
+    }
+
+    .page-grid::before {
+        background-size: 50px 50px;
+    }
+}

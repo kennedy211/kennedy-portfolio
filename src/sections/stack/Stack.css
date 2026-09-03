@@ -1,0 +1,466 @@
+.stack {
+    border-top: 1px solid var(--color-border);
+}
+
+
+/* ===================
+   HEADER
+=================== */
+
+.stack_header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 65px;
+}
+
+.stack_title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+}
+
+.stack_header-description {
+    min-width: 360px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ===================
+   GRID
+=================== */
+
+.stack_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+}
+
+
+/* ===================
+   CARD
+=================== */
+
+.stack_card {
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+
+    background-color: transparent;
+
+    transition:
+        background-color var(--transition-normal);
+}
+
+.stack_card:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+
+/* ===================
+   CARD HEADER
+=================== */
+
+.stack_card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.stack_number {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+
+    color: var(--color-primary);
+}
+
+.stack_icon {
+    color: var(--color-text-muted);
+
+    transition:
+        color var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.stack_card:hover .stack_icon {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+
+/* ===================
+   CONTENT
+=================== */
+
+.stack_card-content {
+    margin-bottom: 35px;
+}
+
+.stack_card-title {
+    margin-bottom: 12px;
+
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+
+    color: var(--color-text);
+}
+
+.stack_card-description {
+    max-width: 420px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ===================
+   TECHNOLOGIES
+=================== */
+
+.stack_technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: auto;
+}
+
+.stack_technology {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 10px;
+
+    border: 1px solid var(--color-border);
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+    line-height: 1;
+
+    color: var(--color-text-secondary);
+    text-decoration: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        background-color var(--transition-fast),
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.stack_technology:hover {
+    border-color: rgba(57, 230, 208, 0.5);
+
+    background-color: rgba(57, 230, 208, 0.04);
+
+    color: var(--color-primary);
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.stack_technology:focus-visible {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* ===================
+   TECHNOLOGY LOGO
+=================== */
+
+.stack_technology-logo {
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    opacity: 0.7;
+
+    color: var(--color-text-secondary);
+
+    filter: grayscale(1);
+
+    transition:
+        opacity var(--transition-fast),
+        filter var(--transition-fast),
+        transform var(--transition-fast),
+        color var(--transition-fast);
+}
+
+.stack_technology:hover .stack_technology-logo {
+    opacity: 1;
+
+    color: var(--color-primary);
+
+    filter: grayscale(0);
+
+    transform: scale(1.08);
+}
+
+
+/* ===================
+   TECHNOLOGY NAME
+=================== */
+
+.stack_technology-name {
+    transition:
+        color var(--transition-fast);
+}
+
+.stack_technology-external {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    line-height: 1;
+
+    color: var(--color-text-muted);
+
+    opacity: 0.6;
+
+    transform: translate(0, 0);
+
+    transition:
+        color var(--transition-fast),
+        opacity var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.stack_technology:hover .stack_technology-external {
+    color: var(--color-primary);
+
+    opacity: 1;
+
+    transform: translate(1px, -1px);
+}
+
+.stack_technology:hover .stack_technology-name {
+    color: var(--color-primary);
+}
+
+
+/* ===================
+   TECHNOLOGY DESCRIPTION
+=================== */
+
+.stack_technology::after {
+    content: attr(data-description);
+
+    position: absolute;
+
+    left: 0;
+    bottom: calc(100% + 10px);
+
+    width: 240px;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--color-border);
+
+    background-color: var(--color-surface);
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-sans);
+    font-size: 11px;
+    line-height: 1.6;
+
+    text-align: left;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(5px);
+
+    pointer-events: none;
+
+    z-index: 20;
+
+    transition:
+        opacity var(--transition-fast),
+        visibility var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.stack_technology:hover::after,
+.stack_technology:focus-visible::after {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+/* ===================
+   BOTTOM
+=================== */
+
+.stack_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-top: 24px;
+}
+
+.stack_terminal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--color-text-muted);
+}
+
+.stack_terminal span {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+}
+
+.stack_status {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+
+    color: var(--color-text-muted);
+}
+
+
+/* ===================
+   RESPONSIVE
+=================== */
+
+@media (max-width: 800px) {
+
+    .stack_header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .stack_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stack_card {
+        min-height: 290px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .stack_header {
+        margin-bottom: 45px;
+    }
+
+    .stack_title-group {
+        gap: 12px;
+    }
+
+    .stack_header-description {
+        min-width: 0;
+
+        font-size: 13px;
+    }
+
+    .stack_card {
+        min-height: 270px;
+
+        padding: 22px;
+    }
+
+    .stack_card-header {
+        margin-bottom: 45px;
+    }
+
+    .stack_card-title {
+        font-size: 21px;
+    }
+
+    .stack_technologies {
+        gap: 6px;
+    }
+
+    .stack_technology {
+        padding: 7px 9px;
+
+        font-size: 9px;
+    }
+
+    .stack_technology-logo {
+        width: 13px;
+        height: 13px;
+    }
+
+    .stack_bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* ===================
+   TOUCH DEVICES
+=================== */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .stack_technology::after,
+    .stack_technology:hover::after,
+    .stack_technology:focus-visible::after {
+        display: none;
+    }
+
+    .stack_technology:hover {
+        transform: none;
+    }
+
+    .stack_technology:hover .stack_technology-logo {
+        transform: none;
+    }
+
+    .stack_technology:hover .stack_technology-external {
+        transform: none;
+    }
+
+}
+
+/* ===================
+   REDUCED MOTION
+=================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stack_card,
+    .stack_icon,
+    .stack_technology,
+    .stack_technology-logo,
+    .stack_technology-external,
+    .stack_technology::after {
+        transition: none;
+    }
+}

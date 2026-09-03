@@ -1,0 +1,283 @@
+/* =========================
+   EDUCATION
+========================= */
+
+.education {
+  border-top: 1px solid var(--color-border);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.education_header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 65px;
+}
+
+.education_title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.education_header-description {
+  max-width: 380px;
+
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: var(--color-text-secondary);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.education_content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 75px;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.education_subtitle {
+  display: flex;
+  align-items: baseline;
+
+  gap: 14px;
+
+  margin-bottom: 30px;
+}
+
+.education_subtitle span {
+  font-size: 9px;
+  color: var(--color-primary);
+}
+
+.education_subtitle h3 {
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-text);
+}
+
+
+/* =========================
+   ACADEMIC TIMELINE
+========================= */
+
+.education_timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid var(--color-border);
+}
+
+
+/* =========================
+   EDUCATION ITEM
+========================= */
+
+.education_item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 145px 20px minmax(0, 1fr);
+
+  gap: 22px;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.education_item-date {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding-top: 2px;
+
+  font-size: 8px;
+  letter-spacing: 0.05em;
+
+  color: var(--color-text-muted);
+}
+
+.education_item-marker {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-top: 5px;
+}
+
+.education_item-marker::before {
+  content: "";
+
+  position: relative;
+
+  width: 6px;
+  height: 6px;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+
+  background-color: var(--color-background);
+
+  z-index: 2;
+}
+
+.education_item-marker::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: 1px;
+
+  background-color: var(--color-border);
+
+  transform: translateX(-50%);
+}
+
+.education_item:first-child .education_item-marker::after {
+  top: 5px;
+}
+
+.education_item:last-child .education_item-marker::after {
+  bottom: calc(100% - 5px);
+}
+
+
+/* =========================
+   EDUCATION CONTENT
+========================= */
+
+.education_item-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.education_item-content h3 {
+  margin: 0;
+
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.2;
+  font-weight: 500;
+
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.education_item-content p {
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.5;
+
+  color: var(--color-text-muted);
+}
+
+
+/* =========================
+   CREDENTIALS
+========================= */
+
+.education_credentials {
+  width: 100%;
+}
+
+.credential_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .education_header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-bottom: 55px;
+  }
+
+  .education_item {
+    grid-template-columns: 150px 20px minmax(0, 1fr);
+
+    gap: 18px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .education_content {
+    gap: 60px;
+  }
+
+  .education_subtitle {
+    margin-bottom: 25px;
+  }
+
+  .education_item {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    padding: 22px 0;
+  }
+
+  .education_item-marker {
+    display: none;
+  }
+
+  .education_item-date {
+    font-size: 8px;
+  }
+
+  .education_item-content h3 {
+    font-size: 21px;
+  }
+
+  .credential_grid {
+    grid-template-columns: 1fr;
+  }
+}

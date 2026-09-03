@@ -1,0 +1,211 @@
+{
+  "navbar": {
+    "about": "Sobre mí",
+    "stack": "Stack",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+
+  "hero": {
+    "eyebrow": "PORTFOLIO",
+    "intro": "Hola, soy",
+    "role": "Ingeniero de Sistemas",
+    "description": "Construyo soluciones tecnológicas orientadas a resolver problemas reales, combinando desarrollo de software, infraestructura y aprendizaje continuo.",
+    "projectsButton": "Ver proyectos",
+    "cvButton": "Descargar CV",
+    "availability": "Disponible para oportunidades",
+    "location": "Colombia · Remote"
+  },
+
+  "about": {
+    "eyebrow": "Sobre Mí",
+    "imageCaption": "ENGINEER / BACKEND / CLOUD",
+    "headline": "Desde el código hasta la infraestructura.",
+    "description1": "Soy Ingeniero de Sistemas enfocado en desarrollo Backend, Python, Django y tecnologías Cloud. Mi formación y experiencia me han permitido explorar diferentes áreas de la tecnología, desde el desarrollo de software hasta el soporte, infraestructura, redes y servidores.",
+    "description2": "Me interesa construir soluciones útiles, comprender cómo funcionan los sistemas de extremo a extremo y continuar fortaleciendo mis habilidades mediante proyectos y experiencia práctica.",
+    "description3": "Actualmente busco oportunidades donde pueda aportar mis conocimientos, asumir nuevos retos y continuar creciendo como profesional de tecnología.",
+    "experienceLink": "Conocer mi experiencia",
+    "areasTitle": "ÁREAS DE ENFOQUE",
+    "areas": {
+      "software": "SOFTWARE",
+      "backend": "BACKEND",
+      "database": "BASE DE DATOS",
+      "cloud": "CLOUD"
+    }
+  },
+
+  "stack": {
+    "title": "Stack tecnológico",
+    "description": "Tecnologías y herramientas que forman parte de mi proceso de desarrollo.",
+    "categories": {
+      "backend": {
+        "title": "BACKEND",
+        "description": "Desarrollo de APIs y aplicaciones backend."
+      },
+      "frontend": {
+        "title": "FRONTEND",
+        "description": "Interfaces web modernas y componentes reutilizables."
+      },
+      "database": {
+        "title": "DATABASE",
+        "description": "Persistencia y gestión de información."
+      },
+      "cloud": {
+        "title": "CLOUD & TOOLS",
+        "description": "Herramientas para desarrollo, APIs y despliegue."
+      }
+    },
+    "technologies": {
+      "python": "Lenguaje de programación utilizado principalmente para desarrollo backend.",
+      "django": "Framework web de alto nivel para construir aplicaciones robustas con Python.",
+      "djangoRest": "Framework para construir APIs REST utilizando Django y Python.",
+      "react": "Biblioteca de JavaScript para construir interfaces mediante componentes reutilizables.",
+      "vite": "Herramienta de desarrollo frontend rápida para proyectos web modernos.",
+      "javascript": "Lenguaje utilizado para desarrollar experiencias web interactivas y dinámicas.",
+      "postgresql": "Sistema de gestión de bases de datos relacional y de código abierto.",
+      "sqlite": "Base de datos relacional ligera, embebida y sin servidor independiente.",
+      "aws": "Plataforma de servicios cloud utilizada para infraestructura y despliegue.",
+      "azure": "Plataforma cloud de Microsoft para infraestructura, aplicaciones y servicios.",
+      "supabase": "Plataforma backend basada en PostgreSQL con servicios para aplicaciones web.",
+      "render": "Plataforma cloud para desplegar aplicaciones y servicios web.",
+      "postman": "Herramienta utilizada para diseñar, probar y documentar APIs.",
+      "swagger": "Especificación y herramientas para diseñar y documentar APIs."
+    },
+    "bottomMessage": "Actualmente fortaleciendo mi perfil en Backend, Cloud y DevOps.",
+    "status": "SYSTEM / LEARNING"
+  },
+
+  "experience": {
+    "title": "Experiencia",
+    "description": "Experiencia técnica y profesional que ha construido mi base en tecnología.",
+    "positionLabel": "CARGO",
+    "position": "Aprendiz de Sistemas",
+    "description1": "Implementé soluciones a requerimientos de usuarios administrativos y operativos, proporcionando soporte técnico a equipos y plataformas de acuerdo con las necesidades del área.",
+    "description2": "Apoyé la gestión y mantenimiento de la infraestructura de red y la atención de incidentes relacionados con el centro de datos, servidores y equipos tecnológicos.",
+    "description3": "Trabajé de forma colaborativa siguiendo procedimientos estructurados para garantizar el cumplimiento eficiente de las tareas y objetivos asignados.",
+    "skills": {
+      "technicalSupport": "Soporte técnico",
+      "infrastructure": "Infraestructura",
+      "networking": "Redes",
+      "servers": "Servidores",
+      "incidentResolution": "Resolución de incidentes",
+      "teamwork": "Trabajo en equipo"
+    },
+    "evolutionLabel": "EVOLUCIÓN",
+    "evolutionDescription": "De infraestructura y soporte hacia el desarrollo de software, Backend y Cloud.",
+    "projectsLink": "Ver proyectos"
+  },
+
+  "projects": {
+    "title": "Proyectos",
+    "description": "Proyectos y experiencias prácticas donde aplico conocimientos de desarrollo de software.",
+    "footerDescription": "Más proyectos y colaboraciones serán incorporados progresivamente a medida que avance mi trayectoria.",
+    "githubLink": "Ver GitHub",
+    "architecture": "ARQUITECTURA",
+    "role": "ROL",
+    "projectStatus": "Proyecto en desarrollo",
+    "github": "GitHub",
+    "demo": "Demo",
+    "items": {
+      "rollitos": {
+        "type": "PROYECTO PERSONAL",
+        "title": "RollitosWebSite",
+        "description": "Plataforma web orientada a la presentación y selección de productos congelados, desarrollada como base para una futura marca de rollitos de distintos tipos y sabores.",
+        "status": "EN DESARROLLO",
+        "role": "Desarrollo Full Stack"
+      }
+    }
+  },
+
+  "education": {
+    "title": "Educación",
+    "description": "Formación académica y credenciales técnicas que respaldan mi desarrollo profesional.",
+
+    "academic": {
+      "subtitle": "Formación académica",
+
+      "0": {
+        "title": "Ingeniería de Sistemas",
+        "institution": "Fundación Universitaria Tecnológico Comfenalco"
+      },
+
+      "1": {
+        "title": "Tecnólogo en Desarrollo de Software",
+        "institution": "Fundación Universitaria Tecnológico Comfenalco"
+      },
+
+      "2": {
+        "title": "Diplomado en Analítica de Datos e Información",
+        "institution": "Fundación Universitaria Tecnológico Comfenalco"
+      }
+    },
+
+    "credentials": {
+      "subtitle": "Credenciales técnicas",
+
+      "0": {
+        "category": "AWS",
+        "title": "AWS Academy Cloud Foundations"
+      },
+
+      "1": {
+        "category": "DJANGO",
+        "title": "Marco Web Django"
+      },
+
+      "2": {
+        "category": "CYBERSECURITY",
+        "title": "Introduction to Cybersecurity"
+      },
+
+      "3": {
+        "category": "IA",
+        "title": "Iniciación a la inteligencia artificial"
+      },
+
+      "4": {
+        "category": "POWER BI",
+        "title": "Visualización de Datos usando Power BI"
+      },
+
+      "5": {
+        "category": "EXCEL",
+        "title": "Manejo Intermedio de la herramienta de hojas de cálculo de Excel"
+      },
+
+      "6": {
+        "category": "PROBLEM SOLVING",
+        "title": "Cómo resolver problemas y tomar decisiones con eficacia"
+      },
+
+      "7": {
+        "category": "LANGUAGE",
+        "title": "English For Everyone"
+      }
+    },
+
+    "credential": {
+      "view": "Ver certificado",
+      "available": "Certificado disponible"
+    }
+  },
+
+  "contact": {
+    "title": "Contacto",
+    "headerDescription": "Disponible para nuevas oportunidades, proyectos y conversaciones relacionadas con desarrollo de software.",
+    "label": "LET'S CONNECT",
+    "heading": "¿Hablemos?",
+    "description": "Estoy abierto a nuevas oportunidades y a seguir creciendo profesionalmente en desarrollo backend, Python, Django y tecnología cloud.",
+    "status": "Disponible para oportunidades",
+    "cta": "Contactar"
+  },
+
+  "footer": {
+    "role": "Backend Developer · Python · Django · Cloud",
+    "backToTop": "Volver arriba",
+    "copyright": "© 2026 Kennedy Suárez · Todos los derechos reservados.",
+    "builtWith": "Construido con React · Vite"
+  }
+}
