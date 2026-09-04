@@ -2,7 +2,7 @@ import { ArrowUpRight, Database } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-import { projects } from "../../data/projects";
+import { projects } from "../../data/Projects";
 import ProjectCard from "./projectCard/ProjectCard";
 
 import "./Projects.css";
