@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://kodesu-kennedy-suarez.vercel.app/sitemap.xml
